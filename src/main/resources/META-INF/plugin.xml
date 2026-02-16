@@ -1,0 +1,19 @@
+<idea-plugin>
+    <id>cloud.azaeem.veloplugin</id>
+    <name>VeloCLI Assistant</name>
+    <vendor url="https://recalled.cloud">Recalled Cloud</vendor>
+    <description><![CDATA[
+        Generate premium Flutter projects using VeloCLI, directly from Android Studio.
+        - Connects to recalled.cloud:9999
+        - Runs the VeloCLI binary with your selections
+        - Opens backend admin quickly for block management
+    ]]></description>
+    <depends>com.intellij.modules.androidstudio</depends>
+    <resource-bundle>messages.MyMessageBundle</resource-bundle>
+    <extensions defaultExtensionNs="com.intellij">
+        <toolWindow id="VeloCli" factoryClass="cloud.azaeem.veloplugin.VeloToolWindowFactory"
+                    icon="AllIcons.Toolwindows.ToolWindowPalette"/>
+        <postStartupActivity implementation="cloud.azaeem.veloplugin.VeloStartupActivity"/>
+        <moduleBuilder builderClass="cloud.azaeem.veloplugin.VeloModuleBuilder"/>
+    </extensions>
+</idea-plugin>
