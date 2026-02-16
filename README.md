@@ -24,7 +24,6 @@ the VeloCLI binary or backend implementation.
 3. Open the **VeloCli** tool window.
 4. Set:
    - `velocli path` to the `velocli` executable
-   - `backend api url` to your backend (for example `http://62.72.18.169:9999`)
    - `VELOCLI_DATA_KEY` if required by your backend
    - Output directory, project name, organization, platforms, and blocks
 5. Click **Generate** to run VeloCLI and scaffold the project.
